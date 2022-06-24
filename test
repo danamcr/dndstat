@@ -1,0 +1,255 @@
+<div class="dnd-stat-bloc">
+  <div class="dsb-titre">
+    Guerreira
+  </div>
+  <div class="dsb-traits">
+    Medium humanoid
+  </div>
+  
+  <div class="dsb-separator"></div>
+  
+  <div class="dsb-stats">
+    <b>Armor Class</b> 20 (Mithral Breastplate) <br/>
+    <b>Hit Points</b> 240 <br/>
+    <b>Speed</b> 30 ft 6 q
+  </div>
+  
+  <div class="dsb-separator"></div>
+  
+  <table>
+    <tr>
+      <td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td>
+    </tr>
+    <tr>
+      <td>28 (+9)</td><td>12 (+1)</td><td>22 (+6)</td><td>8 (-1)</td><td>13 (+1)</td><td>11 (0)</td>
+    </tr>
+  </table>
+  
+  <div class="dsb-separator"></div>
+  
+  <div class="dsb-stats">
+    <b>Saving Throws</b> STR +14 CON +11 <br/>
+    <b>Proficiências</b> Athletics + 14, Acrobatics, Animaling, Intimidation, Stealth, Survival +6<br/>
+    <b>Languages</b> Common <br/>
+    <b>Challenge</b> 15
+
+    
+
+
+  </div>
+  
+  <div class="dsb-separator"></div>
+  
+    <div class="dsb-soustitre">
+   Reaction
+  </div>
+  <p>
+<b>Reactive Resistance. 5/dia <label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label><label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label><label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label><label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label><label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label></b> When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+  </p>
+  
+    <div class="dsb-soustitre">
+    Bonus Action
+  </div>
+  
+    <p>
+    <b>Grappler Master</b> Pode usar Grapple como ação bônus. You have advantage on attack rolls when grappling, and can try to restrained a creature grappled by you.
+  </p>
+      <p>
+  <b>Second Wind 2/dia <label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label><label class="container">
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label></b> You can use a bonus action to regain 1d12 + 12 HP. When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you.   </p>
+  
+  <div class="dsb-soustitre">
+    Actions
+  </div>
+  <p>
+<b>Espadada</b> +15 pra acertar e 3d10 + 30 fogo
+  </p>
+    <p>
+<b>Combate em Equipe</b> Ela escolhe três pessoas a 30 ft, cada uma tem 1d10 (da própria arma) + 10 extra de dano de fogo. Uma delas ganha +5 no ataque.
+  </p>
+  <p>
+<b>Ataque Extra 5 ou 6</b> You can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you. 
+  </p>
+  <p>
+<b>Dragão </b><a href="https://roll20.net/compendium/dnd5e/Red%20Dragon%20Wyrmling#content">Red Dragon Wyrmling</a> In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the drake can take any action ofits choice, not
+just Dodge.
+  </p>
+    <p>
+<b>Dragão Suporte Cusparada</b> Quando alguém a 30 ft do dragão faz um ataque, ele dá 2d10 de bônus de fogo. 
+  </p>
+  
+</div>
+
+
+.dnd-stat-bloc {
+  background-color: #FAEBD7;
+  padding: 40px;
+  position: relative;
+  font-size: 1.3em;
+  column-count: 2;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dnd-stat-bloc:before{
+  background-color: #A52A2A;
+  content:"";
+  width: 100%;
+  height: 8px;
+  border: solid black 1px;
+  display: block;
+  position: absolute;
+  padding: 0px 4px;
+  top: 0px;
+  left: -4px;
+}
+.dnd-stat-bloc:after{
+  background-color: #A52A2A;
+  content:"";
+  width: 100%;
+  height: 8px;
+  border: solid black 1px;
+  display: block;
+  position: absolute;
+  padding: 0px 4px;
+  bottom: 0px;
+  left: -4px;
+}
+
+/* --- Titles --- */
+.dsb-titre {
+  color: #A30B2E;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.dsb-soustitre{
+  width: 100%;
+  border-bottom: solid #A30B2E 1px;
+  color: #A30B2E;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-left: 4px;
+}
+.dsb-soustitre::first-letter{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.dsb-traits{
+  font-style: italic;
+}
+
+/* --- separator --- */
+.dsb-separator {  
+  border-top: solid transparent 2px;
+  border-bottom: solid transparent 2px;
+  border-left: solid #A30B2E 600px;
+  border-right: solid transparent 2px;
+  margin: 8px 0px;
+}
+
+/* ---- stats ---- */
+.dsb-stats {
+  color: #A30B2E;
+}
+
+table {
+  color: #A30B2E;
+  width: 100%;
+  text-align: center;
+}
+
+tr:nth-child(1) {
+  font-weight: bold;
+}
+
+/* caixaaaa */
+
+/* The container */
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #C46E6E;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #A52A2A;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #A52A2A;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
